@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-felipe.png" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Felipe_</p>
+        <h1>Eu estou aprendendo programação</h1>
+        <p>Sou Estudante do Ensino Médio. Estudo sobre pensamento computacional usando HTML, CSS e JavaScript. Veja os projetos
+            que já desenvolvi!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/download.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Corrida</h5>
+                        <p class="card-text">Este projeto é um jogo onde 4 pessoas podem jogar. O objetivo é chegar na linha de chegada antes dos outros jogadores. 
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/monalisa.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Monalisa</h5>
+                        <p class="card-text">Neste projeto o usuário pode se divertir com o personagem criado. Ele irá seguir com os olhos o mouse do usuário </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/quentefrio.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title"> Projeto Quente-Frio
+                        </h5>
+                        <p class="card-text">Este projeto é um jogo onde o jogador tem que achar a palavra que está escondida aleatoriamente pelo espaço da tela do jogo.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Corrida</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto é um jogo criada a partir de JavaScript pelo site P5.js. O objetivo é fazer os jogadores se divertirem com um jogo de corrida.</p>
+                    <p>O cenário do jogo é composto por um ambiente natural, com céu, sol, grama, nuvens e obstáculos visuais na forma de árvores, cujas posições são geradas aleatoriamente a cada execução. A interação ocorre por meio do evento keyReleased(), onde cada jogador avança uma distância aleatória ao pressionar sua respectiva tecla, adicionando um elemento de imprevisibilidade e diversão.</p>
+                    <p>O sistema de verificação identifica automaticamente o vencedor, exibe uma mensagem na tela e encerra o jogo ao detectar que um dos jogadores cruzou a linha de chegada.</p>
+                    <p>Este projeto destaca-se pelo uso de arrays para gerenciar múltiplos jogadores e objetos do cenário, aplicação de geração procedural para posicionamento dos obstáculos, e integração de elementos gráficos que enriquecem a experiência visual e interativa. É um excelente exemplo para demonstrar conceitos fundamentais de programação, como controle de eventos, manipulação de arrays, lógica condicional, e desenvolvimento de jogos 2D simples.</p>
+                    <img src="img/download.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/minhas-leituras/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Monalisa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto consiste no desenvolvimento de uma aplicação interativa utilizando a biblioteca p5.js, onde é criado um personagem estilizado que responde dinamicamente à movimentação do cursor do usuário. O personagem é composto por formas geométricas básicas, como círculos, linhas e triângulos, que representam o rosto, os olhos, o nariz, a boca e as sobrancelhas.
+                    </p>
+                    <p>A principal funcionalidade interativa do projeto é o acompanhamento do movimento do mouse pelos olhos do personagem. Isso é realizado através da função map(), que ajusta as coordenadas das pupilas conforme a posição do cursor, criando o efeito visual de que o personagem está seguindo o usuário com o olhar.</p>
+                    <p>Além disso, o código inclui uma função opcional de depuração, que imprime no console as coordenadas do mouse quando o botão é pressionado. O fundo vibrante e a paleta de cores destacam o caráter lúdico e expressivo da interface.</p>
+                    <p>O projeto demonstra conceitos fundamentais de programação gráfica, como manipulação de coordenadas, interatividade em tempo real, e construção de formas através de primitivas geométricas, sendo ideal para fins educacionais e criativos na introdução à programação visual.
+                    </p>
+                    <img src="img/monalisa.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/tecnicas-computacionais-refletindo-sobre-ia/">Ver projeto ao
+                        vivo</a>
+                    <a href="https://github.com/femascheti/tecnicas-computacionais-refletindo-sobre-ia">Ver código do
+                        projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Quente-frio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto consiste no desenvolvimento de um jogo interativo utilizando a biblioteca p5.js, cujo objetivo é localizar uma palavra escondida em uma posição aleatória da tela. O sistema utiliza como principal elemento de interação um círculo que segue o cursor do mouse, variando seu diâmetro de acordo com a proximidade da palavra oculta: quanto maior a distância entre o cursor e a posição da palavra, maior será o círculo; à medida que o usuário se aproxima, o círculo diminui de tamanho, funcionando como uma pista visual.</p>
+                    <p>A posição da palavra é gerada aleatoriamente no início da execução, com leves variações dinâmicas para simular movimento e aumentar a dificuldade. Quando o usuário encontra a posição correta — indicada pela proximidade mínima entre o cursor e a palavra — uma mensagem de sucesso é exibida ("Encontrei!") e o programa é interrompido, sinalizando o fim da busca.</p>
+                    <p>Este projeto demonstra habilidades essenciais de programação interativa, como geração de números aleatórios, manipulação de distâncias, feedback visual baseado em variáveis e controle de fluxo. Além disso, promove conceitos lúdicos e educacionais, reforçando a lógica computacional e a percepção espacial de maneira criativa.</p>
+                    <img src="img/quentefrio.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://scratch.mit.edu/projects/951732825/">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Felipe Macena</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
